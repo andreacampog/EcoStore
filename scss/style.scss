@@ -1,0 +1,187 @@
+$primary-color: #FFEFE7;
+$secondary-color:#FFDAC6;
+$tertiary-color: #BABD8D;
+$cuaternary-color:#FA9500;
+$primary-text-color:#7C6A0A;
+$font-stack: 'IBM Plex Sans', sans-serif;
+$paragraph-size: 2.5rem; 
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: $font-stack;    
+    font-size: 62.5%;
+
+}
+body{    
+    background-color: $primary-color;    
+}
+
+nav{    
+    height: 135px;   
+    padding: 65px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $primary-text-color;    
+    p{
+        font-size:3rem;      
+    }
+    .icons{
+        display: flex;     
+        gap: 15px;    
+        button{
+            background-color: $primary-color;
+            border: none;                
+        }
+    }
+}
+article{
+    width: 0 auto;
+    padding-left: 65px;
+    padding-right: 69px;
+    color: $primary-text-color;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 131px;
+    
+    .impact-section{    
+        width: 50%;  
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        h1{
+            font-size: 60px;   
+            margin-bottom: 61px;     
+        }
+        p{
+            font-weight:400;
+            font-size: $paragraph-size;
+            line-height: 32.5px;
+            margin-bottom: 109px;
+        }
+        button{      
+            min-width: 261px; 
+            max-width: 25vh;
+            padding: 21px 85px 22px 46px;
+            background-color: $cuaternary-color;
+            color: white;            
+            border-radius: 35px;
+            border: none;
+            font-size: 2.3rem;
+            font-weight: 700;            
+        }
+    }   
+        img{
+            min-width: 550px;
+            max-height: 686px;               
+            border-radius: 19px;               
+        }
+}
+
+section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;    
+    padding: 65px;
+    h2{
+        color: $primary-text-color;
+        font-size: 5rem;        
+    }
+
+    .skincare{        
+        h2{
+            font-weight: 500;
+            line-height: 65px;
+        }
+
+        .cards-container{
+            width: 100%;
+            height: auto;
+            margin: 0 auto 75px;
+            display: flex;        
+            justify-content: space-around;
+            margin-bottom: 75px;
+        }     
+        
+        .product-card{   
+            max-width: 320px;
+            height: auto; 
+            padding: 57px 41px 49px 41px;   
+            position: relative;    
+            display: flex;  
+            flex-direction: column;    
+            background-color: $secondary-color;
+            color: $primary-text-color; 
+            border-radius: 8px;                      
+            .card--icon{
+                width: 30px;
+                height: 30px;
+                margin-bottom: 3px; 
+                position: absolute;
+                top: 18px;     
+                right: 18px;                               
+                         
+            }
+            .card--image{
+                width: 200px;
+                height: auto;  
+                margin-bottom: 17px;     
+                img{
+                    width: 100%;
+                    border-radius: 6px;
+                }
+            }
+            .card--info{
+                width: 188px;
+                height: auto;             
+             
+                h3{
+                    font-size: 2rem;   
+                    font-weight: 600;
+                    margin-bottom: 5px;
+                }       
+
+                p{
+                    font-size: 1.5rem; 
+                    font-weight: 400;
+                }
+            }
+        } 
+
+    }
+
+    .furniture{
+        @extend .skincare;
+        .product-card{                   
+            background-color: $tertiary-color;
+            color: white; 
+            border-radius: 8px;  
+            .card--icon svg path{
+                stroke: #FFFFFF;
+            }
+        }
+        
+    }
+
+.info-section{
+    h2{
+        e
+    }
+
+    }
+
+
+.footer{   
+    background-color: $cuaternary-color;
+    width: 100%;
+    height: 461px;
+
+}
+}
